@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+
+
+    <item
+        android:id="@+id/home"
+        android:icon="@drawable/ic_tab_home_purple"
+        android:title="홈" />
+
+
+<!--    <item-->
+<!--        android:id="@+id/feed"-->
+<!--        android:icon="@drawable/feed"-->
+
+<!--        android:title="피드" />-->
+
+    <item
+        android:id="@+id/report"
+        android:icon="@drawable/ic_tab_report_gray"
+        android:title="리포트" />
+    <item
+        android:id="@+id/mypage"
+        android:icon="@drawable/ic_tab_mypayge_gray"
+        android:title="마이페이지" />
+
+
+</menu>
