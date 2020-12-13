@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.softsquared.nhfoolu">
+    package="com.softsquared.nhfoolu" >
 
     <application
         android:allowBackup="true"
@@ -8,12 +8,30 @@
         android:label="@string/app_name"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
-        android:theme="@style/AppTheme">
-        <activity android:name=".HomeActivity"></activity>
-        <activity android:name=".ReportActivity" />
-        <activity android:name=".MainflowActivity" />
-        <activity android:name=".LoginActivity" />
-        <activity android:name=".MainActivity">
+        android:theme="@style/AppTheme2" >
+        <activity android:name=".Step9Activity" >
+        </activity>
+        <activity android:name=".Step8Activity" />
+        <activity android:name=".Step7Activity" />
+        <activity android:name=".Step6Activity" />
+        <activity android:name=".Step5Activity" />
+        <activity android:name=".Step4Activity" />
+        <activity android:name=".Step3Activity" />
+        <activity android:name=".Step2Activity" />
+        <activity android:name=".Step1Activity" />
+        <activity
+            android:name=".AllBackListActivity"
+            android:theme="@style/AppFloatingScreenTheme" />
+        <activity android:name=".RegisterAccountActivity" />
+        <activity android:name=".InvestActivity" />
+        <activity android:name=".InvestInformation" />
+        <activity android:name=".HomeActivity" />
+        <activity
+            android:name=".LoginActivity"
+            android:theme="@style/AppTheme" />
+        <activity
+            android:name=".MainActivity"
+            android:theme="@style/AppTheme" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 

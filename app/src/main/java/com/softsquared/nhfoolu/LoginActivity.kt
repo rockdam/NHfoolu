@@ -10,7 +10,7 @@ class LoginActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_second)
         kakao_button.setOnClickListener{
-            var intent= Intent(this,HomeActivity::class.java)
+            var intent= Intent(this,InvestActivity::class.java)
 
             startActivity(intent)
 
