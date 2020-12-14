@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".RegisterInformation">
+
+    <ImageView
+        android:id="@+id/backActivity"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="19dp"
+        android:background="?selectableItemBackground"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/ic_login_back_31_dp" />
+
+    <TextView
+        android:id="@+id/textView20"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="투자하기"
+        android:textColor="@color/black"
+        android:fontFamily="@font/robotomedium"
+        android:textSize="14sp"
+        app:layout_constraintBottom_toBottomOf="@+id/backActivity"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/backActivity" />
+
+    <TextView
+        android:id="@+id/textView22"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="48dp"
+        android:textSize="20sp"
+        android:text="투자 신청하기"
+        android:textColor="@color/black"
+        android:fontFamily="@font/robotobold"
+        app:layout_constraintStart_toStartOf="@+id/backActivity"
+        app:layout_constraintTop_toBottomOf="@+id/backActivity" />
+
+    <TextView
+        android:id="@+id/textView25"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="14dp"
+        android:text="투자 가능 한도"
+        android:textColor="#ce4e4e4e"
+        android:fontFamily="@font/robotoregular"
+        app:layout_constraintStart_toStartOf="@+id/textView22"
+        app:layout_constraintTop_toBottomOf="@+id/textView22" />
+
+    <TextView
+        android:id="@+id/textView26"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="13dp"
+        android:textColor="#ce101010"
+        android:fontFamily="@font/robotomedium"
+        android:text="2,478,000원"
+        app:layout_constraintBottom_toBottomOf="@+id/textView25"
+        app:layout_constraintStart_toEndOf="@+id/textView25"
+        app:layout_constraintTop_toTopOf="@+id/textView25" />
+
+    <TextView
+        android:id="@+id/textView90"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="예치금 잔액"
+        android:fontFamily="@font/robotoregular"
+        android:textColor="#ce4e4e4e
+"
+        app:layout_constraintStart_toStartOf="@+id/textView25"
+        app:layout_constraintTop_toBottomOf="@+id/textView25" />
+
+    <TextView
+        android:id="@+id/blanceDeposit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="12dp"
+        android:fontFamily="@font/robotomedium"
+        android:text="0원"
+        android:textColor="#ce101010"
+        app:layout_constraintBottom_toBottomOf="@+id/textView90"
+        app:layout_constraintStart_toEndOf="@+id/textView90"
+        app:layout_constraintTop_toTopOf="@+id/textView90" />
+
+    <TextView
+        android:id="@+id/move_complete_invest_information"
+        android:layout_width="0dp"
+        android:layout_height="41dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginBottom="52dp"
+        android:background="@drawable/shape_full_purple"
+        android:gravity="center"
+        android:text="투자하기"
+        android:fontFamily="@font/montserratsemibold"
+        android:textColor="@color/white"
+        android:textSize="14sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/nhdeposit_start"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/shape_full_depositgray"
+        android:padding="5dp"
+        android:textSize="12sp"
+        android:fontFamily="@font/robotoregular"
+        android:text="예치금 입금"
+        app:layout_constraintEnd_toEndOf="@+id/editTextTextPersonName3"
+        app:layout_constraintTop_toBottomOf="@+id/editTextTextPersonName3" />
+
+    <EditText
+        android:id="@+id/editTextTextPersonName3"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="34dp"
+        android:layout_marginEnd="20dp"
+        android:ems="10"
+        android:textColor="#ce101010"
+        android:fontFamily="@font/montserratsemibold"
+        android:hint="0원"
+        android:backgroundTint="@color/purple"
+        android:inputType="number"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView90" />
+
+    <ImageView
+        android:id="@+id/delete2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        app:layout_constraintStart_toStartOf="@+id/editTextTextPersonName3"
+        app:layout_constraintTop_toBottomOf="@+id/editTextTextPersonName3"
+        app:srcCompat="@drawable/ic_tooza_warning_13_dp" />
+
+    <ImageView
+        android:id="@+id/imageView78"
+        android:layout_width="20dp"
+        android:layout_height="21dp"
+        app:layout_constraintBottom_toBottomOf="@+id/editTextTextPersonName3"
+        app:layout_constraintEnd_toEndOf="@+id/editTextTextPersonName3"
+        app:layout_constraintTop_toTopOf="@+id/editTextTextPersonName3"
+        app:srcCompat="@drawable/ic_tooza_cancle_17_dp" />
+
+    <TextView
+        android:id="@+id/delete1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:fontFamily="@font/robotoregular"
+        android:text="예치금 잔액이 부족합니다."
+        android:textColor="#fc001d"
+        android:textSize="12sp"
+        app:layout_constraintBottom_toBottomOf="@+id/delete2"
+        app:layout_constraintStart_toEndOf="@+id/delete2"
+        app:layout_constraintTop_toTopOf="@+id/delete2" />
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -19,7 +19,7 @@
       app:srcCompat="@drawable/ninestep" />
 
   <TextView
-      android:id="@+id/textView96"
+      android:id="@+id/next_activity"
       android:layout_width="0dp"
       android:layout_height="wrap_content"
       android:layout_marginStart="20dp"
@@ -29,6 +29,7 @@
       android:gravity="center"
       android:padding="10dp"
       android:text="메인으로"
+      android:fontFamily="@font/robotobold"
       android:textColor="@color/purple"
       android:textSize="16sp"
       app:layout_constraintBottom_toBottomOf="parent"

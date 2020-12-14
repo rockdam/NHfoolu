@@ -46,6 +46,8 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="20dp"
         android:layout_marginTop="20dp"
+        android:fontFamily="@font/robotobold"
+        android:textColor="@color/black"
         android:text="투자 리포트"
         android:textSize="20sp"
         app:layout_constraintStart_toStartOf="parent"
@@ -86,6 +88,9 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="19dp"
+                android:textSize="12sp"
+                android:textColor="@color/white"
+                android:fontFamily="@font/robotobold"
                 android:layout_marginTop="17dp"
                 android:text="이번달 투자수익"
                 app:layout_constraintStart_toStartOf="parent"
@@ -107,6 +112,8 @@
                 android:layout_height="wrap_content"
                 android:layout_marginTop="12dp"
                 android:text="1,425,000원"
+                android:fontFamily="@font/montserratbold"
+                android:textColor="@color/white"
                 android:textSize="18sp"
                 app:layout_constraintStart_toStartOf="@+id/textView17"
                 app:layout_constraintTop_toBottomOf="@+id/textView17" />
@@ -115,7 +122,11 @@
                 android:id="@+id/textView28"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:layout_marginTop="3dp"
+                android:textColor="#29cb97"
                 android:text="+547,800"
+                android:fontFamily="@font/montserratsemibold"
+                android:textSize="12sp"
                 app:layout_constraintStart_toStartOf="@+id/textView27"
                 app:layout_constraintTop_toBottomOf="@+id/textView27" />
 
@@ -123,9 +134,14 @@
                 android:id="@+id/textView29"
                 android:layout_width="wrap_content"
                 android:layout_height="17dp"
+                android:layout_marginStart="8dp"
                 android:text="(+ 4.78%)"
+                android:fontFamily="@font/montserratsemibold"
+                android:textColor="@color/white"
+                android:textSize="12sp"
+                app:layout_constraintBottom_toBottomOf="@+id/textView28"
                 app:layout_constraintStart_toEndOf="@+id/textView28"
-                app:layout_constraintTop_toBottomOf="@+id/textView27" />
+                app:layout_constraintTop_toTopOf="@+id/textView28" />
         </androidx.constraintlayout.widget.ConstraintLayout>
 
 
@@ -159,7 +175,10 @@
                 android:layout_height="wrap_content"
                 android:layout_marginStart="23dp"
                 android:layout_marginTop="16dp"
+                android:textSize="12sp"
                 android:text="현재 투자금액"
+                android:fontFamily="@font/robotobold"
+                android:textColor="#070707"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="parent" />
 
@@ -167,28 +186,35 @@
                 android:id="@+id/textView31"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginStart="7dp"
-                android:layout_marginBottom="5dp"
+                android:layout_marginTop="12dp"
+                android:fontFamily="@font/montserratsemibold"
+                android:textColor="#070707"
                 android:text="4,570,000원"
-                app:layout_constraintBottom_toTopOf="@+id/textView32"
-                app:layout_constraintStart_toStartOf="@+id/textView32" />
+                android:textSize="18sp"
+                app:layout_constraintStart_toStartOf="@+id/textView30"
+                app:layout_constraintTop_toBottomOf="@+id/textView30" />
 
             <TextView
                 android:id="@+id/textView32"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:fontFamily="@font/montserratsemibold"
                 android:text="+ 547,800"
-                app:layout_constraintBaseline_toBaselineOf="@+id/textView33"
-                app:layout_constraintStart_toStartOf="@+id/view4" />
+                android:textColor="#29cb97"
+                app:layout_constraintStart_toStartOf="@+id/textView31"
+                app:layout_constraintTop_toBottomOf="@+id/textView31" />
 
             <TextView
                 android:id="@+id/textView33"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginBottom="1dp"
+                android:layout_marginStart="8dp"
                 android:text="(+4.78%)"
-                app:layout_constraintBottom_toTopOf="@+id/view4"
-                app:layout_constraintStart_toEndOf="@+id/textView32" />
+                android:fontFamily="@font/montserratsemibold"
+                app:layout_constraintBottom_toBottomOf="@+id/textView32"
+                app:layout_constraintStart_toEndOf="@+id/textView32"
+                app:layout_constraintTop_toTopOf="@+id/textView32" />
 
             <View
                 android:id="@+id/view4"
@@ -219,65 +245,71 @@
                 android:id="@+id/textView34"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginStart="18dp"
-                android:layout_marginTop="38dp"
-                android:layout_marginBottom="38dp"
+                android:layout_marginTop="16dp"
+                android:fontFamily="@font/robotomedium"
                 android:text="총 투자금액"
-                app:layout_constraintBottom_toTopOf="@+id/textView39"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toTopOf="@+id/textView32" />
+                android:textColor="#717171"
+                android:textSize="12sp"
+                app:layout_constraintStart_toStartOf="@+id/textView32"
+                app:layout_constraintTop_toBottomOf="@+id/view4" />
 
             <TextView
                 android:id="@+id/textView35"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginStart="18dp"
                 android:layout_marginTop="10dp"
+                android:fontFamily="@font/robotomedium"
                 android:text="총 투자이익"
-                app:layout_constraintStart_toStartOf="parent"
+                android:textColor="#717171"
+                android:textSize="12sp"
+                app:layout_constraintStart_toStartOf="@+id/textView34"
                 app:layout_constraintTop_toBottomOf="@+id/textView34" />
 
             <TextView
                 android:id="@+id/textView36"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginStart="17dp"
-                android:layout_marginTop="30dp"
-                android:layout_marginBottom="22dp"
+                android:layout_marginTop="10dp"
+                android:fontFamily="@font/robotomedium"
                 android:text="총 투자손실"
-                app:layout_constraintBottom_toBottomOf="parent"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toTopOf="@+id/textView35" />
+                android:textColor="#717171"
+                android:textSize="12sp"
+                app:layout_constraintStart_toStartOf="@+id/textView35"
+                app:layout_constraintTop_toBottomOf="@+id/textView35" />
 
             <TextView
                 android:id="@+id/textView37"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginEnd="8dp"
-                android:layout_marginBottom="7dp"
+                android:layout_marginEnd="18dp"
+                android:fontFamily="@font/montserratsemibold"
                 android:text="7,420,000원"
-                app:layout_constraintBottom_toTopOf="@+id/textView38"
-                app:layout_constraintEnd_toEndOf="parent" />
+                android:textColor="#717171"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="@+id/textView34" />
 
             <TextView
                 android:id="@+id/textView38"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="6dp"
-                android:layout_marginEnd="11dp"
+                android:fontFamily="@font/montserratsemibold"
                 android:text="4,278,000원"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/textView37" />
+
+                android:textColor="#717171"
+                app:layout_constraintEnd_toEndOf="@+id/textView37"
+                app:layout_constraintTop_toTopOf="@+id/textView35" />
 
             <TextView
                 android:id="@+id/textView39"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="4dp"
-                android:layout_marginEnd="13dp"
+                android:layout_marginTop="23dp"
+                android:fontFamily="@font/montserratsemibold"
                 android:text="738,000원"
+                android:textColor="#717171"
+
                 app:layout_constraintEnd_toEndOf="@+id/textView38"
-                app:layout_constraintTop_toBottomOf="@+id/textView38" />
+                app:layout_constraintTop_toTopOf="@+id/textView35" />
 
         </androidx.constraintlayout.widget.ConstraintLayout>
 
@@ -310,7 +342,11 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="17dp"
-                android:layout_marginTop="6dp"
+                android:layout_marginTop="17dp"
+                android:textSize="12sp"
+                android:fontFamily="@font/robotobold"
+                android:textColor="#070707
+"
                 android:text="예치금"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="parent" />
@@ -319,23 +355,25 @@
                 android:id="@+id/textView41"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginStart="3dp"
-                android:layout_marginBottom="6dp"
+                android:layout_marginTop="8dp"
                 android:text="1,425,000원"
-                app:layout_constraintBottom_toTopOf="@+id/textView42"
-                app:layout_constraintStart_toStartOf="@+id/textView42" />
+                android:textColor="#070707
+"
+                android:fontFamily="@font/montserratbold"
+                android:textSize="18sp"
+                app:layout_constraintStart_toStartOf="@+id/textView40"
+                app:layout_constraintTop_toBottomOf="@+id/textView40" />
 
             <TextView
                 android:id="@+id/textView42"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginStart="20dp"
-                android:layout_marginTop="23dp"
-                android:layout_marginBottom="23dp"
+                android:layout_marginTop="5dp"
                 android:text="마지막 입금 20.12.01"
-                app:layout_constraintBottom_toBottomOf="parent"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toTopOf="@+id/imageView31" />
+                android:textSize="12sp"
+                android:textColor="#bebebe"
+                app:layout_constraintStart_toStartOf="@+id/textView41"
+                app:layout_constraintTop_toBottomOf="@+id/textView41" />
 
             <ImageView
                 android:id="@+id/imageView31"
@@ -355,7 +393,7 @@
     <androidx.cardview.widget.CardView
         android:id="@+id/cardView4"
         android:layout_width="0dp"
-        android:layout_height="248dp"
+        android:layout_height="260dp"
 
         android:layout_marginTop="17dp"
         app:cardCornerRadius="10dp"
@@ -377,9 +415,12 @@
                 android:id="@+id/textView43"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginStart="13dp"
-                android:layout_marginTop="13dp"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="20dp"
                 android:text="투자리스트"
+                android:fontFamily="@font/robotobold"
+                android:textColor="#070707
+"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="parent" />
 
@@ -387,10 +428,12 @@
                 android:id="@+id/textView44"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginStart="13dp"
                 android:layout_marginTop="8dp"
+                android:textColor="#717171"
+                android:textSize="12sp"
+                android:fontFamily="@font/robotomedium"
                 android:text="현재 김마리님이 투자한 리스트입니다."
-                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintStart_toStartOf="@+id/textView43"
                 app:layout_constraintTop_toBottomOf="@+id/textView43" />
 
             <View
@@ -422,7 +465,10 @@
                 android:layout_height="wrap_content"
                 android:layout_marginStart="10dp"
                 android:layout_marginTop="5dp"
-                android:text="김집사"
+                android:textSize="14sp"
+                android:textColor="@color/black"
+                android:fontFamily="@font/robotomedium"
+                android:text="COZYNOA"
                 app:layout_constraintStart_toEndOf="@+id/imageView32"
                 app:layout_constraintTop_toTopOf="@+id/imageView32" />
 
@@ -430,21 +476,25 @@
                 android:id="@+id/textView46"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="투자일자 | 17.08.23"
+                android:fontFamily="@font/robotoregular"
+               android:textSize="12sp"
+                android:textColor="#6a6a6a"
+                android:text="투자일자 I 20.11.23 "
                 app:layout_constraintStart_toStartOf="@+id/textView45"
                 app:layout_constraintTop_toBottomOf="@+id/textView45" />
 
             <ImageView
                 android:id="@+id/imageView33"
-                android:layout_width="wrap_content"
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginStart="16dp"
-                android:layout_marginTop="93dp"
-                android:layout_marginBottom="92dp"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="36dp"
+                android:layout_marginEnd="20dp"
+                android:scaleType="fitXY"
                 android:src="@drawable/ic_main_graph_green"
-                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/textView44" />
+                app:layout_constraintTop_toBottomOf="@+id/textView52" />
 
             <TextView
                 android:id="@+id/textView47"
@@ -453,6 +503,8 @@
                 android:layout_marginStart="19dp"
                 android:layout_marginTop="14dp"
                 android:text="상환률"
+                android:textSize="12sp"
+                android:fontFamily="@font/montserratmedium"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@+id/imageView33" />
 
@@ -460,40 +512,56 @@
                 android:id="@+id/textView48"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginStart="1dp"
-                android:layout_marginTop="14dp"
+                android:layout_marginStart="6dp"
                 android:text="59%"
-                app:layout_constraintStart_toEndOf="@+id/textView51"
-                app:layout_constraintTop_toBottomOf="@+id/imageView33" />
+                android:textSize="12sp"
+                android:fontFamily="@font/montserratmedium"
+                android:textColor="@color/green"
+                app:layout_constraintStart_toEndOf="@+id/textView47"
+                app:layout_constraintTop_toTopOf="@+id/textView47" />
 
             <TextView
                 android:id="@+id/textView49"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginEnd="13dp"
+                android:layout_marginTop="13dp"
+                android:layout_marginEnd="2dp"
                 android:text="총"
-                app:layout_constraintBaseline_toBaselineOf="@+id/textView50"
-                app:layout_constraintEnd_toStartOf="@+id/textView50" />
+                android:textColor="#6f6f6f
+"
+                android:textSize="12sp"
+                android:fontFamily="@font/montserratmedium"
+                app:layout_constraintEnd_toStartOf="@+id/textView50"
+                app:layout_constraintTop_toBottomOf="@+id/imageView33" />
 
             <TextView
                 android:id="@+id/textView50"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginStart="12dp"
-                android:layout_marginTop="14dp"
+                android:layout_marginBottom="17dp"
+                android:textColor="@color/green"
+                android:textSize="12sp"
+                android:fontFamily="@font/montserratsemibold"
                 android:text="2,484,000원"
-                app:layout_constraintStart_toEndOf="@+id/textView46"
-                app:layout_constraintTop_toBottomOf="@+id/imageView33" />
+                app:layout_constraintBottom_toTopOf="@+id/textView51"
+                app:layout_constraintEnd_toEndOf="@+id/imageView33"
+                app:layout_constraintTop_toTopOf="@+id/textView49" />
 
             <TextView
                 android:id="@+id/textView51"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
+                android:layout_width="0dp"
+                android:layout_height="31dp"
                 android:layout_marginStart="16dp"
-                android:layout_marginBottom="21dp"
+                android:layout_marginTop="16dp"
+                android:layout_marginEnd="17dp"
+                android:background="@drawable/rantangle_border_gray"
+                android:gravity="center"
+                android:fontFamily="@font/robotomedium"
                 android:text="자세히보기"
-                app:layout_constraintBottom_toBottomOf="parent"
-                app:layout_constraintStart_toStartOf="parent" />
+                android:textSize="12sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textView47" />
 
             <TextView
                 android:id="@+id/textView52"
@@ -501,6 +569,11 @@
                 android:layout_height="wrap_content"
                 android:layout_marginTop="21dp"
                 android:layout_marginEnd="27dp"
+                android:background="@drawable/rounded_border_green"
+                android:textSize="12sp"
+                android:padding="5dp"
+                android:fontFamily="@font/robotomedium"
+                android:textColor="@color/green"
                 android:text="이자상환중"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintTop_toBottomOf="@+id/view5" />

@@ -9,15 +9,14 @@
     android:layout_height="wrap_content">
 
 
-
         <ImageView
-            android:id="@+id/imageView19"
-            android:layout_width="180dp"
+            android:id="@+id/img_bar"
+            android:layout_width="160dp"
             android:layout_height="wrap_content"
             android:layout_marginTop="4dp"
             android:scaleType="fitXY"
-            app:layout_constraintEnd_toEndOf="@+id/textView21"
-            app:layout_constraintStart_toStartOf="@+id/textView19"
+            app:layout_constraintEnd_toEndOf="@+id/img_investlist"
+            app:layout_constraintStart_toStartOf="@+id/img_investlist"
             app:layout_constraintTop_toBottomOf="@+id/textView19"
             app:srcCompat="@drawable/ic_main_graph_purple" />
 
@@ -25,25 +24,28 @@
             android:id="@+id/textView19"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginStart="5dp"
             android:layout_marginTop="9dp"
+            android:fontFamily="@font/robotoregular"
             android:text="투자 모집중"
+            android:textColor="@color/purple"
             android:textSize="10sp"
-            app:layout_constraintStart_toStartOf="@+id/imageView20"
-            app:layout_constraintTop_toBottomOf="@+id/imageView20" />
+            app:layout_constraintStart_toStartOf="@+id/img_bar"
+            app:layout_constraintTop_toBottomOf="@+id/img_investlist" />
 
         <TextView
-            android:id="@+id/textView20"
+            android:id="@+id/title_investlist"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginTop="10dp"
+            android:textColor="#000000"
+            android:fontFamily="@font/robotomedium"
             android:text="동물계의 유투버,김삿갓"
             android:textSize="12sp"
-            app:layout_constraintStart_toStartOf="@+id/imageView19"
-            app:layout_constraintTop_toBottomOf="@+id/imageView19" />
+            app:layout_constraintStart_toStartOf="@+id/img_bar"
+            app:layout_constraintTop_toBottomOf="@+id/img_bar" />
 
         <ImageView
-            android:id="@+id/imageView20"
+            android:id="@+id/img_investlist"
             android:layout_width="180dp"
             android:layout_height="150dp"
             android:layout_marginTop="14dp"
@@ -57,20 +59,22 @@
             android:id="@+id/textView21"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginEnd="4dp"
+            android:fontFamily="@font/robotomedium"
             android:text="74%"
+            android:textColor="@color/purple"
             android:textSize="10sp"
-            app:layout_constraintBottom_toTopOf="@+id/imageView19"
-            app:layout_constraintEnd_toEndOf="@+id/imageView20"
-            app:layout_constraintTop_toBottomOf="@+id/imageView20" />
+            app:layout_constraintBottom_toTopOf="@+id/img_bar"
+            app:layout_constraintEnd_toEndOf="@+id/img_bar"
+            app:layout_constraintTop_toBottomOf="@+id/img_investlist" />
 
         <TextView
-            android:id="@+id/textView22"
+            android:id="@+id/contents_investlist"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:fontFamily="@font/robotolight"
             android:layout_marginTop="5dp"
             android:text="토스나 뱅크샐러드 같은 앱, 같이 만드 \n실 팀원 분들을 구합니다!"
             android:textSize="10sp"
-            app:layout_constraintStart_toStartOf="@+id/textView20"
-            app:layout_constraintTop_toBottomOf="@+id/textView20" />
+            app:layout_constraintStart_toStartOf="@+id/title_investlist"
+            app:layout_constraintTop_toBottomOf="@+id/title_investlist" />
     </androidx.constraintlayout.widget.ConstraintLayout>

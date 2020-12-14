@@ -18,7 +18,7 @@
         app:srcCompat="@drawable/fivestep" />
 
     <TextView
-        android:id="@+id/textView96"
+        android:id="@+id/next_activity"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginStart="20dp"
@@ -28,6 +28,7 @@
         android:gravity="center"
         android:padding="10dp"
         android:text="다음"
+        android:fontFamily="@font/robotobold"
         android:textColor="@color/purple"
         android:textSize="16sp"
         app:layout_constraintBottom_toBottomOf="@+id/imageView73"

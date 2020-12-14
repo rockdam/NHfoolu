@@ -16,6 +16,7 @@
         android:layout_marginEnd="20dp"
         android:background="@drawable/rounded_border_edittext"
         android:padding="12dp"
+        android:fontFamily="@font/robotomedium"
         android:text="은행선택"
         android:textColor="#ce000000"
         android:textSize="14sp"
@@ -32,6 +33,7 @@
         android:layout_marginBottom="52dp"
         android:background="@drawable/shape_full_gray"
         android:gravity="center"
+        android:fontFamily="@font/robotobold"
         android:text="다음"
         android:textColor="@color/white"
         android:textSize="16sp"
@@ -47,6 +49,7 @@
         android:background="@drawable/rounded_border_edittext"
         android:ems="10"
 
+        android:fontFamily="@font/robotoregular"
         android:hint="계좌번호를 입력해주세요."
         android:inputType="textPersonName"
         android:paddingLeft="15dp"
@@ -61,6 +64,8 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="20dp"
         android:layout_marginTop="26dp"
+        android:textColor="#ce505050"
+        android:fontFamily="@font/robotomedium"
         android:text="투자금 및 수익금 출금을 위한 본인 명의의\n계좌를 등록해주세요."
         android:textSize="16sp"
         app:layout_constraintStart_toStartOf="parent"
@@ -84,6 +89,9 @@
         android:layout_marginTop="20dp"
         android:text="본인 계좌등록"
 
+        android:textColor="#ce000000
+"
+        android:fontFamily="@font/robotobold"
         android:textSize="24sp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/imageView60" />

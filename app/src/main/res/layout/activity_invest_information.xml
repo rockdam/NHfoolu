@@ -1,7 +1,18 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.core.widget.NestedScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+
+    android:layout_marginBottom="38dp"
+    android:fillViewport="true"
+    android:scrollbars="none"
+
+    >
+<LinearLayout
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
@@ -10,119 +21,162 @@
 
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
-        android:layout_height="490dp"
+        android:layout_height="wrap_content"
         android:background="@color/white"
+        android:paddingBottom="20dp"
 
         >
-    <ImageView
-        android:id="@+id/imageView41"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="14dp"
-        android:layout_marginTop="12dp"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/ic_detailpage_back_31_dp" />
 
-    <TextView
-        android:id="@+id/textView66"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:textSize="14sp"
+        <ImageView
+            android:id="@+id/imageView41"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="14dp"
+            android:layout_marginTop="12dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/ic_detailpage_back_31_dp" />
 
-        android:text="천만 요리 유튜버,김집사"
-        app:layout_constraintBottom_toBottomOf="@+id/imageView41"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="@+id/imageView41" />
+        <TextView
+            android:id="@+id/textView66"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="AOMG 비트메이커, COZYNOA"
 
-    <ImageView
-        android:id="@+id/imageView43"
-        android:layout_width="0dp"
-        android:scaleType="fitXY"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="12dp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/imageView41"
-        app:srcCompat="@drawable/img_detailpage_mainthumb" />
+            android:textColor="@color/black"
+            android:fontFamily="@font/robotomedium"
+            android:textSize="14sp"
+            app:layout_constraintBottom_toBottomOf="@+id/imageView41"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/imageView41" />
+
+        <ImageView
+            android:id="@+id/imageView43"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:scaleType="fitXY"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/imageView41"
+            app:srcCompat="@drawable/img_detailpage_mainthumb" />
 
         <TextView
             android:id="@+id/textView67"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:layout_marginStart="28dp"
+            android:layout_marginTop="16dp"
+            android:textSize="14sp"
+            android:fontFamily="@font/robotomedium"
             android:text="투자 마감임박 |"
-            tools:layout_editor_absoluteX="28dp"
-            tools:layout_editor_absoluteY="273dp" />
+            android:textColor="@color/green"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/imageView43" />
 
         <TextView
             android:id="@+id/textView68"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:layout_marginStart="7dp"
+            android:textSize="14sp"
+            android:fontFamily="@font/robotomedium"
             android:text="492명 참여"
-            tools:layout_editor_absoluteX="123dp"
-            tools:layout_editor_absoluteY="273dp" />
+            app:layout_constraintBottom_toBottomOf="@+id/textView67"
+            app:layout_constraintStart_toEndOf="@+id/textView67"
+            app:layout_constraintTop_toTopOf="@+id/textView67" />
 
         <TextView
             android:id="@+id/textView69"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="20dp"
+            android:textColor="@color/green"
+            android:textSize="14sp"
+            android:fontFamily="@font/robotomedium"
             android:text="92% 모집"
-            tools:layout_editor_absoluteX="307dp"
-            tools:layout_editor_absoluteY="277dp" />
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/imageView43" />
 
         <ImageView
             android:id="@+id/imageView44"
-            android:layout_width="wrap_content"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            app:srcCompat="@drawable/ic_detailpage_graph"
-            tools:layout_editor_absoluteX="30dp"
-            tools:layout_editor_absoluteY="309dp" />
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="20dp"
+            android:scaleType="fitXY"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="@+id/textView67"
+            app:layout_constraintTop_toBottomOf="@+id/textView67"
+            app:srcCompat="@drawable/ic_detailpage_graph" />
 
         <TextView
             android:id="@+id/textView70"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="천만 요리 유튜버, 김집사"
-            tools:layout_editor_absoluteX="36dp"
-            tools:layout_editor_absoluteY="345dp" />
+            android:layout_marginTop="4dp"
+            android:textColor="@color/black"
+            android:fontFamily="@font/robotobold"
+            android:text="SM 전문 작곡가, COZYNOA"
+            android:textSize="20sp"
+            app:layout_constraintStart_toStartOf="@+id/imageView44"
+            app:layout_constraintTop_toBottomOf="@+id/imageView44" />
 
         <TextView
             android:id="@+id/textView71"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="리빙 . 요리"
-            tools:layout_editor_absoluteX="35dp"
-            tools:layout_editor_absoluteY="369dp" />
+            android:layout_marginTop="9dp"
+            android:textColor="#a5a5a5"
+            android:fontFamily="@font/robotolight"
+            android:text="음악ㆍ문화"
+            app:layout_constraintStart_toStartOf="@+id/textView70"
+            app:layout_constraintTop_toBottomOf="@+id/textView70" />
 
         <TextView
             android:id="@+id/textView72"
-            android:layout_width="wrap_content"
+            android:layout_width="0dp"
             android:layout_height="wrap_content"
-            android:text="토스나 뱅크샐러드 같은 앱, 같이 만드실 팀원 분들을 구합니다! 가나다라 마바사 아자차카 타파하 "
-            tools:layout_editor_absoluteX="30dp"
-            tools:layout_editor_absoluteY="397dp" />
+            android:layout_marginTop="9dp"
+            android:text="SM 전문 작곡가, COZYNOA입니다. 현재 국내 유명 가수 및
+            \n아이돌을 위주로 작업을 진행하고 있습니다. "
+            android:textSize="12sp"
+            android:textColor="@color/black"
+            android:fontFamily="@font/robotolight"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="@+id/textView71"
+            app:layout_constraintTop_toBottomOf="@+id/textView71" />
 
         <ImageView
             android:id="@+id/imageView45"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            app:srcCompat="@drawable/img_detailpage_profile_21_dp"
-            tools:layout_editor_absoluteX="24dp"
-            tools:layout_editor_absoluteY="453dp" />
+            android:layout_marginStart="20dp"
+            app:layout_constraintBottom_toBottomOf="@+id/textView73"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/textView73"
+            app:srcCompat="@drawable/img_detailpage_profile_21_dp" />
 
         <TextView
             android:id="@+id/textView73"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="김집사"
-            tools:layout_editor_absoluteX="54dp"
-            tools:layout_editor_absoluteY="454dp" />
+            android:layout_marginStart="9dp"
+            android:layout_marginTop="12dp"
+            android:textColor="#a5a5a5"
+            android:textSize="12sp"
+            android:text="COZYNOA"
+            android:fontFamily="@font/robotomedium"
+            app:layout_constraintStart_toEndOf="@+id/imageView45"
+            app:layout_constraintTop_toBottomOf="@+id/textView72" />
     </androidx.constraintlayout.widget.ConstraintLayout>
 
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
-        android:layout_height="140dp"
+        android:layout_height="160dp"
         android:layout_marginTop="12dp"
         android:background="@color/white"
 
@@ -136,6 +190,9 @@
             android:layout_marginStart="20dp"
             android:layout_marginTop="20dp"
             android:text="투자 포인트"
+            android:textColor="@color/black"
+            android:fontFamily="@font/robotobold"
+            android:textSize="14sp"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent" />
 
@@ -143,6 +200,7 @@
             android:id="@+id/imageView46"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:layout_marginStart="5dp"
             app:layout_constraintBottom_toBottomOf="@+id/textView74"
             app:layout_constraintStart_toEndOf="@+id/textView74"
             app:layout_constraintTop_toTopOf="@+id/textView74"
@@ -150,14 +208,11 @@
 
         <ImageView
             android:id="@+id/imageView47"
-            android:layout_width="31dp"
+            android:layout_width="wrap_content"
             android:layout_height="22dp"
+            android:layout_marginStart="31dp"
             android:layout_marginTop="19dp"
-            android:layout_marginBottom="19dp"
-            app:layout_constraintBottom_toBottomOf="@+id/textView75"
-            app:layout_constraintEnd_toStartOf="@+id/imageView48"
-            app:layout_constraintHorizontal_bias="0.5"
-            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintStart_toStartOf="@+id/textView74"
             app:layout_constraintTop_toBottomOf="@+id/textView74"
             app:srcCompat="@drawable/ic_detailpage_youtube" />
 
@@ -173,11 +228,10 @@
 
         <ImageView
             android:id="@+id/imageView49"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+            android:layout_width="22dp"
+            android:layout_height="25dp"
+            android:layout_marginEnd="65dp"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.5"
-            app:layout_constraintStart_toEndOf="@+id/imageView48"
             app:layout_constraintTop_toTopOf="@+id/imageView48"
             app:srcCompat="@drawable/ic_detailpage_anjeong" />
 
@@ -185,73 +239,90 @@
             android:id="@+id/textView75"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginBottom="4dp"
+            android:layout_marginTop="10dp"
             android:text="구독자"
+            android:fontFamily="@font/robotomedium"
+            android:textColor="#717171"
             android:textSize="12sp"
-            app:layout_constraintBottom_toTopOf="@+id/textView76"
             app:layout_constraintEnd_toEndOf="@+id/imageView47"
-            app:layout_constraintStart_toStartOf="@+id/imageView47" />
+            app:layout_constraintStart_toStartOf="@+id/imageView47"
+            app:layout_constraintTop_toBottomOf="@+id/imageView47" />
 
         <TextView
             android:id="@+id/textView76"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginBottom="21dp"
-            android:text="1000만명"
+            android:layout_marginTop="4dp"
+            android:text="152만명"
+            android:fontFamily="@font/montserratsemibold"
+            android:textColor="#4b4b4b"
             android:textSize="12sp"
-            app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="@+id/textView75"
-            app:layout_constraintStart_toStartOf="@+id/textView75" />
+            app:layout_constraintStart_toStartOf="@+id/textView75"
+            app:layout_constraintTop_toBottomOf="@+id/textView75" />
 
         <TextView
             android:id="@+id/textView77"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="TextView"
-            tools:layout_editor_absoluteX="237dp"
-            tools:layout_editor_absoluteY="98dp" />
+            android:text="10,000,000원"
+            android:fontFamily="@font/montserratsemibold"
+            android:textColor="#4b4b4b"
+            app:layout_constraintEnd_toEndOf="@+id/textView91"
+            app:layout_constraintStart_toStartOf="@+id/textView91"
+            app:layout_constraintTop_toTopOf="@+id/textView76" />
 
         <ImageView
             android:id="@+id/imageView55"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:layout_marginEnd="2dp"
+            android:layout_marginBottom="4dp"
             app:layout_constraintBottom_toBottomOf="@+id/textView77"
             app:layout_constraintEnd_toStartOf="@+id/textView77"
-            app:layout_constraintTop_toTopOf="@+id/textView77"
             app:srcCompat="@drawable/ic_detailpage_adup" />
 
         <TextView
             android:id="@+id/textView91"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:textColor="#717171"
             android:text="월 광고수익"
-            tools:layout_editor_absoluteX="232dp"
-            tools:layout_editor_absoluteY="81dp" />
+            android:fontFamily="@font/robotomedium"
+            app:layout_constraintEnd_toEndOf="@+id/imageView48"
+            app:layout_constraintStart_toStartOf="@+id/imageView48"
+            app:layout_constraintTop_toTopOf="@+id/textView75" />
 
         <TextView
             android:id="@+id/textView92"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:textColor="#717171"
             android:text="안정성"
-            tools:layout_editor_absoluteX="364dp"
-            tools:layout_editor_absoluteY="78dp" />
+            android:fontFamily="@font/robotomedium"
+            app:layout_constraintEnd_toEndOf="@+id/imageView49"
+            app:layout_constraintStart_toStartOf="@+id/imageView49"
+            app:layout_constraintTop_toTopOf="@+id/textView91" />
 
         <TextView
             android:id="@+id/textView93"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="4.5/5"
-            tools:layout_editor_absoluteX="369dp"
-            tools:layout_editor_absoluteY="100dp" />
+            android:text="4.5 / 5"
+            android:fontFamily="@font/montserratsemibold"
+            android:textColor="#4b4b4b"
+            app:layout_constraintEnd_toEndOf="@+id/textView92"
+            app:layout_constraintStart_toStartOf="@+id/textView92"
+            app:layout_constraintTop_toTopOf="@+id/textView77" />
 
         <ImageView
             android:id="@+id/imageView56"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:layout_marginEnd="2dp"
             app:layout_constraintBottom_toBottomOf="@+id/textView93"
             app:layout_constraintEnd_toStartOf="@+id/textView93"
             app:layout_constraintTop_toTopOf="@+id/textView93"
-            app:layout_constraintVertical_bias="1.0"
             app:srcCompat="@drawable/ic_detailpage_star" />
     </androidx.constraintlayout.widget.ConstraintLayout>
 
@@ -269,66 +340,95 @@
             android:id="@+id/textView78"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="TextView"
-            tools:layout_editor_absoluteX="28dp"
-            tools:layout_editor_absoluteY="16dp" />
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="16dp"
+            android:fontFamily="@font/robotobold"
+            android:textColor="@color/black"
+            android:text="투자 이익 계산기"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
 
         <ImageView
             android:id="@+id/imageView50"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            app:srcCompat="@drawable/ic_detailpage_what_15_dp"
-            tools:layout_editor_absoluteX="86dp"
-            tools:layout_editor_absoluteY="20dp" />
+            android:layout_marginStart="6dp"
+            app:layout_constraintBottom_toBottomOf="@+id/textView78"
+            app:layout_constraintStart_toEndOf="@+id/textView78"
+            app:layout_constraintTop_toTopOf="@+id/textView78"
+            app:srcCompat="@drawable/ic_detailpage_what_15_dp" />
 
-        <Button
+        <TextView
             android:id="@+id/button"
             android:layout_width="59dp"
             android:layout_height="26dp"
-            android:textSize="10sp"
+            android:layout_marginTop="14dp"
+            android:layout_marginEnd="4dp"
             android:text="자세히 보기"
-            tools:layout_editor_absoluteX="371dp"
-            tools:layout_editor_absoluteY="14dp" />
+            android:fontFamily="@font/robotomedium"
+            android:gravity="center"
+            android:textColor="@color/black"
+            android:background="@drawable/shape_full_lightgray"
+            android:textSize="10sp"
+            app:layout_constraintEnd_toEndOf="@+id/textView82"
+            app:layout_constraintTop_toTopOf="parent" />
 
         <TextView
             android:id="@+id/textView79"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="TextView"
-            tools:layout_editor_absoluteX="28dp"
-            tools:layout_editor_absoluteY="40dp" />
+            android:layout_marginTop="16dp"
+            android:textSize="12sp"
+            android:textColor="#717171"
+            android:fontFamily="@font/robotomedium"
+            android:text="투자금"
+            app:layout_constraintStart_toStartOf="@+id/textView78"
+            app:layout_constraintTop_toBottomOf="@+id/textView78" />
 
         <TextView
             android:id="@+id/textView80"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="TextView"
-            tools:layout_editor_absoluteX="28dp"
-            tools:layout_editor_absoluteY="61dp" />
+            android:textSize="16sp"
+            android:textColor="#2f2f2f"
+            android:fontFamily="@font/montserratsemibold"
+            android:layout_marginTop="9dp"
+            android:text="100만원"
+            app:layout_constraintStart_toStartOf="@+id/textView79"
+            app:layout_constraintTop_toBottomOf="@+id/textView79" />
 
         <ImageView
             android:id="@+id/imageView51"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            app:srcCompat="@drawable/ic_detailpage_moneygraph"
-            tools:layout_editor_absoluteX="28dp"
-            tools:layout_editor_absoluteY="112dp" />
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="12dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView80"
+            app:srcCompat="@drawable/ic_detailpage_moneygraph" />
 
         <TextView
             android:id="@+id/textView81"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="TextView"
-            tools:layout_editor_absoluteX="359dp"
-            tools:layout_editor_absoluteY="100dp" />
+            android:layout_marginEnd="20dp"
+            android:layout_marginBottom="21dp"
+            android:textSize="19sp"
+            android:textColor="@color/purple"
+            android:text="1,570,000원"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent" />
 
         <TextView
             android:id="@+id/textView82"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="TextView"
-            tools:layout_editor_absoluteX="376dp"
-            tools:layout_editor_absoluteY="73dp" />
+            android:layout_marginBottom="8dp"
+            android:fontFamily="@font/robotomedium"
+            android:textSize="12sp"
+            android:text="예상 이익"
+            app:layout_constraintBottom_toTopOf="@+id/textView81"
+            app:layout_constraintEnd_toEndOf="@+id/textView81" />
     </androidx.constraintlayout.widget.ConstraintLayout>
 
     <androidx.constraintlayout.widget.ConstraintLayout
@@ -343,63 +443,100 @@
             android:id="@+id/textView83"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="31dp"
+            android:textSize="14sp"
+            android:textColor="@color/black"
+            android:fontFamily="@font/robotobold"
             android:text="상세내용"
-            tools:layout_editor_absoluteX="19dp"
-            tools:layout_editor_absoluteY="17dp" />
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
 
         <TextView
             android:id="@+id/textView84"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="안녕하세요, 천만 요리 유튜버 김집사 입니다."
-            tools:layout_editor_absoluteX="20dp"
-            tools:layout_editor_absoluteY="65dp" />
+            android:layout_marginTop="40dp"
+            android:textSize="16sp"
+            android:textColor="@color/black"
+            android:fontFamily="@font/robotobold"
+            android:text="안녕하세요, SM 전문 작곡가\nCOZYNOA입니다."
+            app:layout_constraintStart_toStartOf="@+id/textView83"
+            app:layout_constraintTop_toBottomOf="@+id/textView83" />
 
         <ImageView
             android:id="@+id/imageView52"
-            android:layout_width="wrap_content"
+            android:layout_width="0dp"
             android:layout_height="wrap_content"
-            app:srcCompat="@drawable/img_detailpage_mainthumb"
-            tools:layout_editor_absoluteX="29dp"
-            tools:layout_editor_absoluteY="99dp" />
+            android:layout_marginTop="20dp"
+            android:scaleType="fitXY"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView84"
+            app:srcCompat="@drawable/img_detailpage_subthumb_1" />
 
         <TextView
             android:id="@+id/textView85"
-            android:layout_width="wrap_content"
+            android:layout_width="0dp"
             android:layout_height="wrap_content"
-            android:text="토스나 뱅크샐러드 같은 앱, 같이 만드실 팀원 분들을 구합니다! 가나다라 마바사 아자차카 타파하 토스나 뱅크샐러드 같은 앱, 같이 만드실 팀원 분 들을 구합니다! 가나다라 마바사 아자차카 타파하 "
-            tools:layout_editor_absoluteX="26dp"
-            tools:layout_editor_absoluteY="337dp" />
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="26dp"
+            android:layout_marginEnd="21dp"
+            android:textColor="@color/black"
+            android:fontFamily="@font/robotolight"
+            android:text="안녕하세요. SM 전문 작곡가 COZYNOA입니다. 현재 국내 유명가수 및 아이돌을 중심으로 작곡하고 있으며, 현재는 해외 랩퍼들과 함께 협업을 진행하고 있습니다."
+            android:textSize="12sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/imageView52" />
 
         <ImageView
             android:id="@+id/imageView53"
-            android:layout_width="wrap_content"
+            android:layout_width="0dp"
             android:layout_height="wrap_content"
-            app:srcCompat="@drawable/img_detailpage_mainthumb"
-            tools:layout_editor_absoluteX="29dp"
-            tools:layout_editor_absoluteY="435dp" />
+            android:layout_marginTop="20dp"
+            android:layout_marginEnd="9dp"
+            android:scaleType="centerCrop"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView86"
+            app:srcCompat="@drawable/img_detailpage_subthumb_2" />
 
         <TextView
             android:id="@+id/textView86"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="안녕하세요, 천만 요리 유튜버 김집사 입니다."
-            tools:layout_editor_absoluteX="50dp"
-            tools:layout_editor_absoluteY="397dp" />
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="41dp"
+            android:textColor="@color/black"
+            android:fontFamily="@font/robotobold"
+            android:text="무료 및 유료 비트 컨텐츠 생산 및\n작곡 컨텐츠를 생산할 예정입니다."
+            android:textSize="16sp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView85" />
 
         <TextView
             android:id="@+id/textView87"
-            android:layout_width="wrap_content"
+            android:layout_width="0dp"
             android:layout_height="wrap_content"
-            android:text="토스나 뱅크샐러드 같은 앱, 같이 만드실 팀원 분들을 구합니다! 가나다라 마바사 아자차카 타파하 토스나 뱅크샐러드 같은 앱, 같이 만드실 팀원 분 들을 구합니다! 가나다라 마바사 아자차카 타파하 "
-            tools:layout_editor_absoluteX="66dp"
-            tools:layout_editor_absoluteY="676dp" />
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="24dp"
+            android:layout_marginEnd="32dp"
+            android:text="일반인을 대상으로 무료 및 유료 비트 컨텐츠를 유튜브를 통해 배포할 예정이며, 작곡 튜토리얼 컨텐츠를 생산할 예정입니다. 현재 152만명의 구독자를 보유하고 있으며, 뮤직 컨텐츠 상 반복재생을 하는 유저가 많은편입니다. "
+            android:textSize="12sp"
+            android:textColor="@color/black"
+            android:fontFamily="@font/robotolight"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="@+id/imageView53"
+            app:layout_constraintTop_toBottomOf="@+id/imageView53" />
 
         <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/constraintLayout"
             android:layout_width="match_parent"
-            android:layout_height="132dp"
+            android:layout_height="140dp"
+            android:layout_marginTop="30dp"
             android:background="#efefef"
-            app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/textView87">
@@ -409,36 +546,69 @@
                 android:id="@+id/imageView54"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                app:srcCompat="@drawable/ic_detailpage_warnlist_15_dp"
-                tools:layout_editor_absoluteX="33dp" />
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="26dp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:srcCompat="@drawable/ic_detailpage_warnlist_15_dp" />
 
             <TextView
                 android:id="@+id/textView88"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:layout_marginStart="4dp"
+                android:textColor="@color/black"
+                android:fontFamily="@font/robotobold"
                 android:text="주의사항"
-                tools:layout_editor_absoluteX="65dp"
-                tools:layout_editor_absoluteY="4dp" />
+                app:layout_constraintBottom_toBottomOf="@+id/imageView54"
+                app:layout_constraintStart_toEndOf="@+id/imageView54"
+                app:layout_constraintTop_toTopOf="@+id/imageView54" />
 
             <TextView
                 android:id="@+id/textView89"
-                android:layout_width="wrap_content"
+                android:layout_width="0dp"
                 android:layout_height="wrap_content"
-                android:text="토스나 뱅크샐러드 같은 앱, 같이 만드실 팀원 분들을 구합니다! 가나다라 마바사 아자차카 타파하 토스나 뱅크샐러드 같은 앱, 같이 만드실 팀원 분 들을 구합니다! 가나다라 마바사 아자차카 타파하 "
-                tools:layout_editor_absoluteX="0dp"
-                tools:layout_editor_absoluteY="55dp" />
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginEnd="39dp"
+                android:fontFamily="@font/robotolight"
+                android:textColor="@color/black"
+                android:text="플루는 투자금 및 원리금 상환에 대한 책임 의무가 없으며, 투자과정에서 발생한 문제에 법적인 책임을 지지 않습니다. 투자에 관한 책임 및 권리는 투자자 및 인플루언서에게 있습니다. "
+                android:textSize="12sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textView88" />
         </androidx.constraintlayout.widget.ConstraintLayout>
 
         <TextView
-            android:id="@+id/textView90"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+            android:id="@+id/investbutton_invest_information"
+            android:layout_width="0dp"
+            android:layout_height="42dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="44dp"
+            android:layout_marginEnd="20dp"
+            android:background="@drawable/shape_full_purple"
+            android:gravity="center"
             android:text="투자하기"
-            tools:layout_editor_absoluteX="156dp"
-            tools:layout_editor_absoluteY="908dp" />
+            android:fontFamily="@font/montserratsemibold"
+            android:textColor="@color/white"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/constraintLayout" />
+
+        <ImageView
+            android:id="@+id/imageView15"
+            android:layout_width="56dp"
+            android:layout_height="wrap_content"
+            android:scaleType="fitXY"
+            android:layout_marginTop="15dp"
+            app:layout_constraintStart_toStartOf="@+id/textView83"
+            app:layout_constraintTop_toTopOf="@+id/textView83"
+            app:srcCompat="@drawable/ic_detailpage_purpleline" />
 
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 
 
 </LinearLayout>
+</androidx.core.widget.NestedScrollView>

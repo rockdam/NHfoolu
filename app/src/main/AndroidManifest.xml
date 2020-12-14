@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.softsquared.nhfoolu" >
+    package="com.softsquared.nhfoolu">
 
     <application
         android:allowBackup="true"
@@ -8,9 +8,13 @@
         android:label="@string/app_name"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
-        android:theme="@style/AppTheme2" >
-        <activity android:name=".Step9Activity" >
-        </activity>
+        android:theme="@style/AppTheme2">
+        <activity android:name=".CompleteInverstInformation"></activity>
+        <activity android:name=".NHDeposit"   android:theme="@style/AppFloatingScreenTheme"/>
+        <activity
+            android:name=".RegisterInformation"
+            android:windowSoftInputMode="adjustResize" />
+        <activity android:name=".Step9Activity" />
         <activity android:name=".Step8Activity" />
         <activity android:name=".Step7Activity" />
         <activity android:name=".Step6Activity" />
@@ -31,7 +35,7 @@
             android:theme="@style/AppTheme" />
         <activity
             android:name=".MainActivity"
-            android:theme="@style/AppTheme" >
+            android:theme="@style/AppTheme">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 

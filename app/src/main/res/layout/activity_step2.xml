@@ -18,7 +18,7 @@
         app:srcCompat="@drawable/twostep" />
 
     <TextView
-        android:id="@+id/textView96"
+        android:id="@+id/next_activity"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginStart="20dp"
@@ -27,6 +27,7 @@
         android:background="@drawable/shape_full_white"
         android:gravity="center"
         android:padding="10dp"
+        android:fontFamily="@font/robotobold"
         android:text="투자 진단 시작하기"
         android:textColor="@color/purple"
         android:textSize="16sp"
